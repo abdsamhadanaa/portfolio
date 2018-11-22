@@ -1,0 +1,90 @@
+body{
+   size: 100%;
+     margin: 0;
+     background-image: url("./images/background1.jpg") ;
+     background-size: cover;
+     background-repeat: no-repeat;
+     min-height: 120vh;
+}
+.all{
+  display: flex;
+  }
+  .button {
+    margin-left: 45vw;
+    margin-top: 15vw;
+    border-radius: 4px;
+    background-color: #78393c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 60px
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.sidenav {
+   display: flex;
+   flex-direction: column;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.motivationletter{
+  display: none;
+  background-color: #78393c;
+  color: white;
+height: 300px;
+width: 650px;
+opacity: .5;
+margin-left: 28vw;
+margin-top: 3vw;
+border-radius: 5px;
+}
+p{
+  margin: 20px;
+  padding: 20px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
